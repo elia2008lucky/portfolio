@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rwanda Genocide Memorial - Remembering the 1994 Genocide</title>
+    <meta name="description" content="A memorial website dedicated to remembering the 1994 Rwanda Genocide against the Tutsi, honoring the victims, and promoting peace and reconciliation">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#006600",
+                        secondary: "#333333",
+                        accent: "#FF0000"
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-overlay {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 102, 0, 0.3));
+        }
+        .memorial-candle {
+            animation: flicker 3s infinite alternate;
+        }
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-white font-inter">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-primary rounded-full"></div>
+                    <span class="text-xl font-semibold text-secondary">Never Forget</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-secondary hover:text-primary transition-colors font-medium">Home</a>
+                    <a href="#history" class="text-secondary hover:text-primary transition-colors font-medium">History</a>
+                    <a href="#victims" class="text-secondary hover:text-primary transition-colors font-medium">Victims</a>
+                    <a href="#memorials" class="text-secondary hover:text-primary transition-colors font-medium">Memorials</a>
+                    <a href="#education" class="text-secondary hover:text-primary transition-colors font-medium">Education</a>
+                </div>
+                
+                <button class="md:hidden text-secondary">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-96 bg-gray-900">
+        <img 
+            src="https://picsum.photos/1200/600?random=1" 
+            alt="Rwanda landscape with memorial flowers" 
+            class="w-full h-full object-cover"
+            loading="lazy"
+        />
+        <div class="absolute inset-0 hero-overlay flex items-center justify-center">
+            <div class="text-center text-white px-4">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Remembering Rwanda</h1>
+                <p class="text-xl md:text-2xl mb-8">1994 Genocide Against the Tutsi</p>
+                <div class="memorial-candle text-3xl">🕯️</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="history" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-secondary mb-12">Historical Timeline</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-primary font-semibold mb-2">April 6, 1994</div>
+                        <h3 class="text-xl font-bold text-secondary mb-3">Beginning of the Genocide</h3>
+                        <p class="text-gray-600">The assassination of President Juvénal Habyarimana marked the beginning of 100 days of systematic killing.</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-primary font-semibold mb-2">April - July 1994</div>
+                        <h3 class="text-xl font-bold text-secondary mb-3">100 Days of Violence</h3>
+                        <p class="text-gray-600">An estimated 800,000 to 1 million Tutsi and moderate Hutu were systematically killed.</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-primary font-semibold mb-2">July 1994</div>
+                        <h3 class="text-xl font-bold text-secondary mb-3">Liberation</h3>
+                        <p class="text-gray-600">The Rwandan Patriotic Front took control of the country, ending the genocide.</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-primary font-semibold mb-2">Present Day</div>
+                        <h3 class="text-xl font-bold text-secondary mb-3">Reconciliation & Recovery</h3>
+                        <p class="text-gray-600">Rwanda continues its journey of healing, reconciliation, and national unity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Victims Memorial -->
+    <section id="victims" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-secondary mb-12">In Memory of the Victims</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-2xl">800K+</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-secondary mb-2">Lives Lost</h3>
+                    <p class="text-gray-600">Estimated number of people killed during the 100 days of genocide</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-2xl">75%</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-secondary mb-2">Tutsi Population</h3>
+                    <p class="text-gray-600">Percentage of the Tutsi population in Rwanda that was killed</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-2xl">100</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-secondary mb-2">Days</h3>
+                    <p class="text-gray-600">Duration of the systematic killing that changed Rwanda forever</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <div class="inline-flex space-x-4">
+                    <div class="memorial-candle text-2xl">🕯️</div>
+                    <div class="memorial-candle text-2xl" style="animation-delay: 0.5s">🕯️</div>
+                    <div class="memorial-candle text-2xl" style="animation-delay: 1s">🕯️</div>
+                    <div class="memorial-candle text-2xl" style="animation-delay: 1.5s">🕯️</div>
+                    <div class="memorial-candle text-2xl" style="animation-delay: 2s">🕯️</div>
+                </div>
+                <p class="text-gray-600 mt-4">Light a candle in memory of those we lost</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Memorial Sites -->
+    <section id="memorials" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-secondary mb-12">Memorial Sites</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img 
+                        src="https://picsum.photos/400/300?random=2" 
+                        alt="Kigali Genocide Memorial" 
+                        class="w-full h-48 object-cover"
+                        loading="lazy"
+                    />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-secondary mb-2">Kigali Genocide Memorial</h3>
+                        <p class="text-gray-600 mb-4">The final resting place for more than 250,000 victims of the genocide.</p>
+                        <div class="text-primary font-semibold">Kigali, Rwanda</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img 
+                        src="https://picsum.photos/400/300?random=3" 
+                        alt="Nyamata Church Memorial" 
+                        class="w-full h-48 object-cover"
+                        loading="lazy"
+                    />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-secondary mb-2">Nyamata Church Memorial</h3>
+                        <p class="text-gray-600 mb-4">Site where thousands sought refuge and were killed inside the church.</p>
+                        <div class="text-primary font-semibold">Bugesera District</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img 
+                        src="https://picsum.photos/400/300?random=4" 
+                        alt="Murambi Genocide Memorial" 
+                        class="w-full h-48 object-cover"
+                        loading="lazy"
+                    />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-secondary mb-2">Murambi Genocide Memorial</h3>
+                        <p class="text-gray-600 mb-4">Technical school where approximately 50,000 people were killed.</p>
+                        <div class="text-primary font-semibold">Southern Province</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-secondary mb-12">Education & Prevention</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-primary text-white p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">"Never Again" - Lessons for Humanity</h3>
+                    <p class="text-lg mb-6">The Rwanda genocide teaches us about the dangers of division, hate speech, and the importance of standing against discrimination in all its forms.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-white text-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-xs"></i>
+                            </div>
+                            <p>Combat hate speech and discrimination</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-white text-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-xs"></i>
+                            </div>
+                            <p>Promote unity and reconciliation</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-white text-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-xs"></i>
+                            </div>
+                            <p>Educate future generations</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-white text-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-xs"></i>
+                            </div>
+                            <p>Stand against genocide denial</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Never Forget</h3>
+                    <p class="text-gray-300">Remembering the 1994 Genocide against the Tutsi. Honoring the victims, supporting survivors, and promoting peace.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Resources</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-white transition-colors">Genocide Education</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Survivor Stories</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Historical Documents</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">How to Help</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@neverforget.rw</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-phone"></i>
+                            <span>+250 788 123 456</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Kigali, Rwanda</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300">
+                <p>"Memory is the foundation of all future." - Rwandan Proverb</p>
+                <p class="mt-2">© 2024 Rwanda Genocide Memorial. Never Forget.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Memorial candle lighting interaction
+        document.querySelectorAll('.memorial-candle').forEach(candle => {
+            candle.addEventListener('click', function() {
+                this.style.transform = 'scale(1.2)';
+                this.style.transition = 'transform 0.3s ease';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 300);
+            });
+        });
+
+        // Mobile menu toggle (simplified)
+        document.querySelector('button').addEventListener('click', function() {
+            alert('Mobile menu would open here');
+        });
+
+        // Page data
+        const memorialData = {
+            "timeline": [
+                { "date": "April 6, 1994", "event": "Beginning of Genocide" },
+                { "date": "April-July 1994", "event": "100 Days of Violence" },
+                { "date": "July 1994", "event": "Liberation" },
+                { "date": "Present Day", "event": "Reconciliation & Recovery" }
+            ],
+            "memorialSites": [
+                { "name": "Kigali Genocide Memorial", "location": "Kigali" },
+                { "name": "Nyamata Church Memorial", "location": "Bugesera District" },
+                { "name": "Murambi Genocide Memorial", "location": "Southern Province" }
+            ]
+        };
+    </script>
+</body>
+</html>
